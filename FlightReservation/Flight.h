@@ -5,6 +5,7 @@ namespace FlightReservation {
 	class Flight
 	{
 	public:
+		Flight() = default;
 		Flight(const std::string& number);
 
 		//Getters and setters
