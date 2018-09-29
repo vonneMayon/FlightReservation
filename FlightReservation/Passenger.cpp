@@ -5,8 +5,8 @@
 using namespace std;
 
 namespace FlightReservation {
-	Passenger::Passenger(const std::string& firstName, const std::string& birthDate)
-		: mFirstName(firstName), mBirthDate(birthDate){}
+	Passenger::Passenger(const std::string& firstName, const std::string& birthDate, const std::string& lastName, const std::string& gender)
+		: mFirstName(firstName), mBirthDate(birthDate), mLastName(lastName), mGender(gender) {}
 
 
 	void Passenger::setFirstName(const string& firstName)
@@ -27,5 +27,25 @@ namespace FlightReservation {
 	const string& Passenger::getBirthDate() const
 	{
 		return mBirthDate;
+	}
+
+	void Passenger::setLastName(const string& lastName)
+	{
+		mLastName = lastName;
+	}
+
+	const string& Passenger::getLastName() const
+	{
+		return mLastName;
+	}
+
+	void Passenger::setGender(const string& gender)
+	{
+		mGender = gender;
+	}
+
+	const string& Passenger::getGender() const
+	{
+		return mGender;
 	}
 }
